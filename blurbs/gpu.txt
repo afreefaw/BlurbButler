@@ -1,0 +1,15 @@
+GPU = graphics processing unit
+Used for gaming, video editing, machine learning, and other graphics-intensive tasks
+Different brands: Nvidia, AMD, Intel
+Consider factors like price, power consumption, and performance
+Some popular models:
+Nvidia RTX 3080 - high-end, expensive, great for gaming
+AMD Radeon RX 6800 XT - more affordable than RTX 3080, good for gaming and creative work
+Nvidia GTX 1660 - budget-friendly, decent performance for casual gaming
+Looked at prices on Amazon, Best Buy, Newegg, and other retailers
+Average prices:
+RTX 3080 - $1,000+
+RX 6800 XT - $800+
+GTX 1660 - $200-$300
+Read reviews on tech websites like Tom's Hardware and AnandTech
+Concerned about availability and scalpers buying up stock
