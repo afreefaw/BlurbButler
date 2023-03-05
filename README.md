@@ -19,8 +19,10 @@ To try it out, take a look at the .txt files in the blurb files and ask related 
 > According to the recipe you provided, your chili recipe requires 1 1/2 teaspoons of salt.
 ```
 
-Here, the user's query has been classified by chatGPT as most related to the topic 'recipes', out of the available topics ['recipes', 'graphics card options', 'finance thoughts', 'media recommendations', 'travel plans']
-
+Here, the user's query has been classified by chatGPT as most related to the topic 'recipes', out of the available topics
+```python
+['recipes', 'graphics card options', 'finance thoughts', 'media recommendations', 'travel plans']
+```
 Another example:
 ```
 > What books have been suggested to me recently?
