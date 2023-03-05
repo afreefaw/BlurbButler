@@ -39,12 +39,14 @@ def load_docs(topic_map):
     
 def get_msg(response):
     '''Returns the message portion of of an API response'''
-    return response.json()['choices'][0]['message']['content']
+    if 'choices' in response.json().keys():
+        return response.json()['choices'][0]['message']['content']
+    else: return None
 
 def build_system_msg(topic, blurbs):
     '''Builds and returns a system message in dict form expected by API'''
     if topic in blurbs.keys():
-        system_msg = "Search found this context relevant to user's query:\nTOPIC: " + topic + '\n' + blurbs[topic]
+        system_msg = "SYSTEM found this context relevant to user's query (user does not see this info):\nTOPIC: " + topic + '\n' + blurbs[topic]
         return {'role':'system','content':system_msg}
     else:
         return {'role':'system','content':'No relevant content found'}
@@ -62,7 +64,7 @@ def main():
     BLURBS = load_docs(TOPIC_MAP)
     TOPICS = list(BLURBS.keys())
     msgs = [{'role':'system',
-         'content':'You are a concise personal assistant. Help the user, referring to extra content provided by the system where appropriate.'}]
+         'content':'You are a concise personal assistant. Help the user, paying special attention to content provided by the SYSTEM, which is not visible to the user but is relevant to their query.'}]
     
     print('Type exit to exit.')
     while True:
