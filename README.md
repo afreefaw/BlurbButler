@@ -9,7 +9,7 @@ Simply clone, paste your openai API key into apikey.txt, and run:
 ```bash
 python butler.py
 ```
-Please note as of Mar 5, 2023, unless you add a payment method to your openai account you will be rate limited and the bot may not work for more than a few messages at a time.
+Please note as of Mar 5, 2023, unless you add a payment method to your openai account you will be rate limited and the bot may not work for more than a few messages at a time. All testing during development cost less than 1 cent of the $18 free starter credit.
 
 ## Examples
 There are example txt files and associated topics provided. The example usage is a personal assistant with access to a few different notes files that the user keeps. Topics are in topics.json, txt files are in /blurbs/.
