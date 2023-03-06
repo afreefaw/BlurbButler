@@ -75,6 +75,7 @@ def main():
         topic = match_topic(user_msg, TOPICS, API_KEY)
         msgs.append(build_system_msg(topic, BLURBS))
         assist_msg = get_msg(get_response(msgs, API_KEY))
+        msgs.append({'role':'assistant','content':assist_msg})
         print(assist_msg)
 
 if __name__ == "__main__":
