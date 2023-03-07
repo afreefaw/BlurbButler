@@ -4,12 +4,16 @@ chatGPT-based chatbot that reviews relevant local files before responding to you
 
 ## Setup
 
-Simply clone, paste your openai API key into apikey.txt, and run:
+Simply clone, [set your OpenAI API key is as an environment variable](https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety), e.g., for windows:
+```
+setx OPENAI_API_KEY “<yourkey>”
+```
+and run:
 
 ```bash
 python butler.py
 ```
-Please note as of Mar 5, 2023, unless you add a payment method to your openai account you will be rate limited and the bot may not work for more than a few messages at a time. All testing during development cost around 10 cents out of the $18 free starter credit.
+Please note as of Mar 5, 2023, unless you add a payment method to your openai account you will be rate limited and the bot may not work for more than a few messages at a time. At this time I ahve spent < $0.3 in all testing of BlurbButler.
 
 ## Examples
 There are example txt files and associated topics provided. The example usage is a personal assistant with access to a few different notes files that the user keeps. Topics are in topics.json, txt files are in /blurbs/.
