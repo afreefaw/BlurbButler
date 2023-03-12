@@ -13,7 +13,7 @@ and run:
 ```bash
 python butler.py
 ```
-Please note as of Mar 5, 2023, unless you add a payment method to your openai account you will be rate limited and the bot may not work for more than a few messages at a time. At this time I have spent < $0.3 in all testing of BlurbButler.
+Please note as of Mar 5, 2023, unless you add a payment method to your openai account you will be rate limited and the bot may not work for more than a few messages at a time. At this time I have spent < $0.30 in all testing of BlurbButler.
 
 ## Examples
 There are example txt files and associated topics provided. The example usage is a personal assistant with access to a few different notes files that the user keeps. Topics are in topics.json, txt files are in /blurbs/.
